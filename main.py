@@ -4,6 +4,8 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 from datetime import datetime
 import pandas as pd
 
+# Загружаем словарь для Vader
+nltk.download('vader_lexicon', quiet=True)
 sia = SentimentIntensityAnalyzer()
 
 rows = []
@@ -18,8 +20,9 @@ try:
                 date_created = data.get('created_utc', None)
                 num_of_comments = data.get('num_comments', 0)
 
-                if date_created is None:
-                    raise ValueError("Missing 'created_utc' timestamp")
+                # Пропускаем, если текст пустой, удалённый или удалён модераторами
+                if not selftext.strip() or selftext.strip().lower() in {"[deleted]", "[removed]"}:
+                    continue
 
                 try:
                     date = datetime.utcfromtimestamp(int(date_created)).date()
@@ -40,12 +43,14 @@ try:
                     'sentiment': sentiment,
                     'date': date
                 })
+
             except json.JSONDecodeError as e:
                 print(f"[Line {line_number}] JSON decode error: {e}")
             except Exception as e:
                 print(f"[Line {line_number}] Unexpected error: {e}")
+
 except FileNotFoundError:
-    print("File 'check' not found.")
+    print("File 'Bitcoin_submissions' not found.")
 except Exception as e:
     print(f"Error reading file: {e}")
 
