@@ -3,7 +3,7 @@ import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from datetime import datetime
 import pandas as pd
-import math
+import math #check
 
 # Загружаем словарь для Vader
 nltk.download('vader_lexicon', quiet=True)
