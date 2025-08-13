@@ -11,7 +11,7 @@ INPUT_DIR = "input"
 OUTPUT_DIR = "bitcoin_submissions"
 
 # Создаём папку для Delta Lake, если её нет
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+# os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Загружаем словарь для Vader
 nltk.download('vader_lexicon', quiet=True)
