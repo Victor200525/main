@@ -1,7 +1,6 @@
 __pycache__/
 .venv/
 *.pyc
-data/
 *.parquet
 *.json
 *.jsonl
