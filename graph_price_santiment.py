@@ -1,3 +1,4 @@
+# В новой версии не используется
 import pandas as pd
 import matplotlib.pyplot as plt
 

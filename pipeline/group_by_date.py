@@ -1,8 +1,10 @@
 import polars as pl
+import config
 
 def group_by_date():
-    # Читаем parquet
-    df = pl.read_parquet("output.parquet")
+    INPUT_DIR = config.STAGE_DIR
+    # df = pl.read_parquet("output.parquet")
+    df = pl.read_delta(INPUT_DIR)
 
     # Группируем и считаем средние
     result = (
@@ -13,7 +15,4 @@ def group_by_date():
         .sort("Date")
     )
 
-    # Сохраняем в новый parquet
-    result.write_parquet("aggregated_weights.parquet")
-
-    print("Данные сохранены в aggregated_weights.parquet")
+    return result
