@@ -14,7 +14,7 @@ new_data = False # просто индикатор нам обрабатыват
 
 if new_data: 
     set_sentiment() # parsing json file, save to delta STAGING table
-#btc_quotes = eod_btc_quotes() # get quotes from Yahoo
-#df_sentiment = group_by_date()
-#join_sentiment_price(df_sentiment, btc_quotes) # JOIN dataframes
+btc_quotes = eod_btc_quotes() # get quotes from Yahoo
+df_sentiment = group_by_date()
+join_sentiment_price(df_sentiment, btc_quotes) # JOIN dataframes
 plt.plot_data()
