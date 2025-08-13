@@ -96,4 +96,4 @@ class PlotDateEcharts:
 
         )
         #plot.render_notebook()
-        display(HTML(plot.render("plot.html")))
+        display(HTML(plot.render("./plots/plot.html")))
