@@ -1,6 +1,10 @@
+'''
+просто пример вызова для рисования чарта. График сохраняется в plot.html
+'''
 from utils.plot_echarts import PlotDateEcharts
 
 import pandas as pd
+
 
 # Тестовые данные
 data = {
