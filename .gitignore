@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 data/
 *.parquet
+*.json
+*.jsonl
+Bitcoin_submissions_file
