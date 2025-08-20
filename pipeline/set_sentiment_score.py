@@ -13,23 +13,39 @@ BASE_URL = "https://gxdy-work.hf.space"
 API_KEY = "value1"
 HEADERS = {"x-api-key": API_KEY}
 
-def get_santiment(text: str) -> int:
-    """Отправляет текст в Hugging Face API и возвращает +1 / -1 / 0"""
+def get_santiment(text: str) -> float:
+    """Отправляет текст в Hugging Face API и возвращает +score / -score / 0"""
     try:
         payload = {"text": text}
         response = requests.post(f"{BASE_URL}/analyze", json=payload, headers=HEADERS)
         result = response.json()
         label = result["result"][0]["label"].lower()
+        score = result["result"][0]["score"]
 
         if label == "positive":
-            return 1
+            return 1 * score
         elif label == "negative":
-            return -1
+            return -1 * score
         else:
             return 0
     except Exception as e:
         print(f"Ошибка API: {e}")
         return 0
+
+def get_sentiment_nltk(selftext, upvotes, filename, line_number, sia):
+    """Вычисляет тональность текста через NLTK и рассчитывает взвешенный score"""
+    try:
+        sentiment = sia.polarity_scores(selftext)
+    except Exception as e:
+        print(f"[{filename} | Line {line_number}] Ошибка анализа тональности: {e}")
+        sentiment = {}
+
+    compound = sentiment.get('compound', 0)
+    norm_score_log = math.log1p(max(upvotes, 0))
+    norm_score_0_1 = norm_score_log / math.log1p(max(1, upvotes))
+    weight_balanced = 0.5 * norm_score_0_1 + 0.5 * ((compound + 1) / 2)
+
+    return compound, weight_balanced
 
 def set_sentiment():
     INPUT_DIR = config.INPUT_DIR
@@ -65,16 +81,7 @@ def set_sentiment():
                             print(f"[{filename} | Line {line_number}] Ошибка даты: {e}")
                             continue
 
-                        try:
-                            sentiment = sia.polarity_scores(selftext)
-                        except Exception as e:
-                            print(f"[{filename} | Line {line_number}] Ошибка анализа тональности: {e}")
-                            sentiment = {}
-
-                        compound = sentiment.get('compound', 0)
-                        norm_score_log = math.log1p(max(upvotes, 0))
-                        norm_score_0_1 = norm_score_log / math.log1p(max(1, upvotes))
-                        weight_balanced = 0.5 * norm_score_0_1 + 0.5 * ((compound + 1) / 2)
+                        #УБРАННАЯ NLTK
 
                         # ==== Вызов Hugging Face API и вывод результата ====
                         hf_sentiment = get_santiment(selftext)
