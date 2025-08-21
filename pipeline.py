@@ -3,7 +3,6 @@ from pipeline.download_yh_price_data import eod_btc_quotes
 from pipeline.set_sentiment_score import set_sentiment
 from pipeline.group_by_date import group_by_date
 import plots.plot as plt
-import polars as pl
 import config
 
 STAGE_DIR = config.STAGE_DIR
