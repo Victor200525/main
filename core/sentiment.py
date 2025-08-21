@@ -1,5 +1,6 @@
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
+import requests  # для Hugging Face API
 
 class SentimentHuggingFace:
     def __init__(self, base_url, api_key):
