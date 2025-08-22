@@ -54,29 +54,35 @@ class SentimentHuggingFaceAsync:
         self.api_key = api_key
         self.base_url = base_url
         self.headers = {"x-api-key": self.api_key}
+        self.client = httpx.AsyncClient()  # создаём клиент один раз
 
     async def get_sentiment(self, text: str) -> float:
         """Отправляет текст в Hugging Face API (асинхронно) и возвращает +score / -score / 0"""
         try:
             payload = {"text": text}
-            async with httpx.AsyncClient() as client:
-                response = await client.post(f"{self.base_url}/analyze",
-                                             json=payload,
-                                             headers=self.headers,
-                                             timeout=30.0)
+            response = await self.client.post(
+                f"{self.base_url}/analyze",
+                json=payload,
+                headers=self.headers,
+                timeout=5.0  # можно уменьшить для скорости
+            )
             result = response.json()
             label = result["result"][0]["label"].lower()
             score = result["result"][0]["score"]
 
             if label == "positive":
-                return 1 * score
+                return score
             elif label == "negative":
-                return -1 * score
+                return -score
             else:
                 return 0
         except Exception as e:
             print(f"Ошибка API: {e}")
             return 0
+
+    async def close(self):
+        """Закрываем клиент после всех запросов"""
+        await self.client.aclose()
 
 
 # Пример использования
