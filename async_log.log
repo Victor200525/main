@@ -1,0 +1,143 @@
+2025-08-23T12:43:56.690369+0000 | INFO | batch is full
+2025-08-23T12:43:56.690629+0000 | INFO | batch processing is starting
+2025-08-23T12:44:56.976656+0000 | INFO | batch processing has finished
+2025-08-23T12:44:56.978851+0000 | INFO | batch is full
+2025-08-23T12:44:56.979028+0000 | INFO | batch processing is starting
+2025-08-23T12:44:59.732045+0000 | INFO | delta table has been saved
+2025-08-23T12:46:01.991572+0000 | INFO | batch processing has finished
+2025-08-23T12:46:01.993857+0000 | INFO | batch is full
+2025-08-23T12:46:01.994048+0000 | INFO | batch processing is starting
+2025-08-23T12:46:02.409821+0000 | INFO | delta table has been saved
+2025-08-23T12:47:08.571287+0000 | INFO | batch processing has finished
+2025-08-23T12:47:08.573521+0000 | INFO | batch is full
+2025-08-23T12:47:08.573707+0000 | INFO | batch processing is starting
+2025-08-23T12:47:08.993571+0000 | INFO | delta table has been saved
+2025-08-23T12:48:10.303966+0000 | INFO | batch processing has finished
+2025-08-23T12:48:10.306106+0000 | INFO | batch is full
+2025-08-23T12:48:10.306276+0000 | INFO | batch processing is starting
+2025-08-23T12:48:10.656023+0000 | INFO | delta table has been saved
+2025-08-23T12:49:12.021148+0000 | INFO | batch processing has finished
+2025-08-23T12:49:12.023581+0000 | INFO | batch is full
+2025-08-23T12:49:12.023804+0000 | INFO | batch processing is starting
+2025-08-23T12:49:12.369127+0000 | INFO | delta table has been saved
+2025-08-23T12:50:11.695476+0000 | INFO | batch processing has finished
+2025-08-23T12:50:11.697677+0000 | INFO | batch is full
+2025-08-23T12:50:11.697851+0000 | INFO | batch processing is starting
+2025-08-23T12:50:12.091018+0000 | INFO | delta table has been saved
+2025-08-23T12:51:09.801406+0000 | INFO | batch processing has finished
+2025-08-23T12:51:09.803600+0000 | INFO | batch is full
+2025-08-23T12:51:09.803798+0000 | INFO | batch processing is starting
+2025-08-23T12:51:10.163655+0000 | INFO | delta table has been saved
+2025-08-23T12:52:09.066901+0000 | INFO | batch processing has finished
+2025-08-23T12:52:09.069140+0000 | INFO | batch is full
+2025-08-23T12:52:09.069319+0000 | INFO | batch processing is starting
+2025-08-23T12:52:09.432552+0000 | INFO | delta table has been saved
+2025-08-23T12:53:05.519380+0000 | INFO | batch processing has finished
+2025-08-23T12:53:05.521150+0000 | INFO | batch processing is starting
+2025-08-23T12:53:05.878912+0000 | INFO | delta table has been saved
+2025-08-23T12:53:49.987128+0000 | INFO | batch processing has finished
+2025-08-23T12:53:50.269296+0000 | INFO | delta table has been saved
+2025-08-23T12:58:37.066146+0000 | INFO | batch is full
+2025-08-23T12:58:37.066412+0000 | INFO | batch processing is starting
+2025-08-23T12:59:49.914325+0000 | INFO | batch processing has finished
+2025-08-23T12:59:49.916563+0000 | INFO | batch is full
+2025-08-23T12:59:49.916739+0000 | INFO | batch processing is starting
+2025-08-23T12:59:52.404788+0000 | INFO | delta table has been saved
+2025-08-23T13:00:58.915579+0000 | INFO | batch processing has finished
+2025-08-23T13:00:58.917866+0000 | INFO | batch is full
+2025-08-23T13:00:58.918044+0000 | INFO | batch processing is starting
+2025-08-23T13:00:59.266144+0000 | INFO | delta table has been saved
+2025-08-23T13:02:02.759207+0000 | INFO | batch processing has finished
+2025-08-23T13:02:02.761445+0000 | INFO | batch is full
+2025-08-23T13:02:02.761626+0000 | INFO | batch processing is starting
+2025-08-23T13:02:03.153896+0000 | INFO | delta table has been saved
+2025-08-23T13:03:06.195501+0000 | INFO | batch processing has finished
+2025-08-23T13:03:06.197737+0000 | INFO | batch is full
+2025-08-23T13:03:06.197941+0000 | INFO | batch processing is starting
+2025-08-23T13:03:06.617739+0000 | INFO | delta table has been saved
+2025-08-23T13:04:14.042326+0000 | INFO | batch processing has finished
+2025-08-23T13:04:14.044574+0000 | INFO | batch is full
+2025-08-23T13:04:14.044755+0000 | INFO | batch processing is starting
+2025-08-23T13:04:14.409060+0000 | INFO | delta table has been saved
+2025-08-23T13:05:16.775607+0000 | INFO | batch processing has finished
+2025-08-23T13:05:16.777841+0000 | INFO | batch is full
+2025-08-23T13:05:16.778036+0000 | INFO | batch processing is starting
+2025-08-23T13:05:17.186708+0000 | INFO | delta table has been saved
+2025-08-23T13:06:18.392682+0000 | INFO | batch processing has finished
+2025-08-23T13:06:18.394912+0000 | INFO | batch is full
+2025-08-23T13:06:18.395101+0000 | INFO | batch processing is starting
+2025-08-23T13:06:18.761963+0000 | INFO | delta table has been saved
+2025-08-23T13:07:18.114783+0000 | INFO | batch processing has finished
+2025-08-23T13:07:18.116986+0000 | INFO | batch is full
+2025-08-23T13:07:18.117168+0000 | INFO | batch processing is starting
+2025-08-23T13:07:18.550218+0000 | INFO | delta table has been saved
+2025-08-23T13:08:18.738807+0000 | INFO | batch processing has finished
+2025-08-23T13:08:18.741001+0000 | INFO | batch is full
+2025-08-23T13:08:18.742453+0000 | INFO | batch processing is starting
+2025-08-23T13:08:19.129651+0000 | INFO | delta table has been saved
+2025-08-23T13:09:22.211699+0000 | INFO | batch processing has finished
+2025-08-23T13:09:22.214411+0000 | INFO | batch is full
+2025-08-23T13:09:22.214622+0000 | INFO | batch processing is starting
+2025-08-23T13:09:22.568269+0000 | INFO | delta table has been saved
+2025-08-23T13:10:22.329328+0000 | INFO | batch processing has finished
+2025-08-23T13:10:22.331584+0000 | INFO | batch is full
+2025-08-23T13:10:22.331793+0000 | INFO | batch processing is starting
+2025-08-23T13:10:22.850908+0000 | INFO | delta table has been saved
+2025-08-23T13:11:26.709194+0000 | INFO | batch processing has finished
+2025-08-23T13:11:26.710287+0000 | INFO | batch processing is starting
+2025-08-23T13:11:27.059281+0000 | INFO | delta table has been saved
+2025-08-23T13:11:48.114582+0000 | INFO | batch processing has finished
+2025-08-23T13:11:48.383099+0000 | INFO | delta table has been saved
+2025-08-23T13:14:24.358331+0000 | INFO | batch is full
+2025-08-23T13:14:24.358568+0000 | INFO | batch processing is starting
+2025-08-23T13:15:24.504395+0000 | INFO | batch processing has finished
+2025-08-23T13:15:24.506699+0000 | INFO | batch is full
+2025-08-23T13:15:24.506901+0000 | INFO | batch processing is starting
+2025-08-23T13:15:26.975604+0000 | INFO | delta table has been saved
+2025-08-23T13:16:23.576439+0000 | INFO | batch processing has finished
+2025-08-23T13:16:23.579061+0000 | INFO | batch is full
+2025-08-23T13:16:23.579340+0000 | INFO | batch processing is starting
+2025-08-23T13:16:23.954161+0000 | INFO | delta table has been saved
+2025-08-23T13:17:20.195966+0000 | INFO | batch processing has finished
+2025-08-23T13:17:20.198186+0000 | INFO | batch is full
+2025-08-23T13:17:20.198377+0000 | INFO | batch processing is starting
+2025-08-23T13:17:20.543206+0000 | INFO | delta table has been saved
+2025-08-23T13:18:16.117761+0000 | INFO | batch processing has finished
+2025-08-23T13:18:16.120005+0000 | INFO | batch is full
+2025-08-23T13:18:16.120223+0000 | INFO | batch processing is starting
+2025-08-23T13:18:16.519803+0000 | INFO | delta table has been saved
+2025-08-23T13:19:16.069722+0000 | INFO | batch processing has finished
+2025-08-23T13:19:16.071913+0000 | INFO | batch is full
+2025-08-23T13:19:16.072091+0000 | INFO | batch processing is starting
+2025-08-23T13:19:16.409937+0000 | INFO | delta table has been saved
+2025-08-23T13:20:12.280832+0000 | INFO | batch processing has finished
+2025-08-23T13:20:12.283001+0000 | INFO | batch is full
+2025-08-23T13:20:12.283196+0000 | INFO | batch processing is starting
+2025-08-23T13:20:12.672815+0000 | INFO | delta table has been saved
+2025-08-23T13:21:20.462273+0000 | INFO | batch processing has finished
+2025-08-23T13:21:20.464500+0000 | INFO | batch is full
+2025-08-23T13:21:20.464681+0000 | INFO | batch processing is starting
+2025-08-23T13:21:20.860697+0000 | INFO | delta table has been saved
+2025-08-23T13:22:23.524953+0000 | INFO | batch processing has finished
+2025-08-23T13:22:23.527124+0000 | INFO | batch is full
+2025-08-23T13:22:23.527300+0000 | INFO | batch processing is starting
+2025-08-23T13:22:23.958187+0000 | INFO | delta table has been saved
+2025-08-23T13:23:24.208956+0000 | INFO | batch processing has finished
+2025-08-23T13:23:24.210206+0000 | INFO | batch processing is starting
+2025-08-23T13:23:24.538384+0000 | INFO | delta table has been saved
+2025-08-23T13:23:38.649949+0000 | INFO | batch processing has finished
+2025-08-23T13:23:39.002224+0000 | INFO | delta table has been saved
+2025-08-23T13:27:35.850639+0000 | INFO | batch is full
+2025-08-23T13:27:35.850904+0000 | INFO | batch processing is starting
+2025-08-23T13:28:36.149884+0000 | INFO | batch processing has finished
+2025-08-23T13:28:36.152212+0000 | INFO | batch is full
+2025-08-23T13:28:36.152403+0000 | INFO | batch processing is starting
+2025-08-23T13:28:38.587269+0000 | INFO | delta table has been saved
+2025-08-23T13:29:35.030876+0000 | INFO | batch processing has finished
+2025-08-23T13:29:35.033128+0000 | INFO | batch is full
+2025-08-23T13:29:35.033312+0000 | INFO | batch processing is starting
+2025-08-23T13:29:35.395162+0000 | INFO | delta table has been saved
+2025-08-23T13:30:33.698855+0000 | INFO | batch processing has finished
+2025-08-23T13:30:33.701095+0000 | INFO | batch is full
+2025-08-23T13:30:33.701276+0000 | INFO | batch processing is starting
+2025-08-23T13:30:34.070598+0000 | INFO | delta table has been saved

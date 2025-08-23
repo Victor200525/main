@@ -45,9 +45,10 @@ class SentimentNTLK:
         #norm_score_0_1 = norm_score_log / math.log1p(max(1, upvotes))
         #weight_balanced = 0.5 * norm_score_0_1 + 0.5 * ((compound + 1) / 2)
         return compound
+
+
 import httpx
 import asyncio
-
 
 class SentimentHuggingFaceAsync:
     def __init__(self, base_url, api_key):
@@ -55,6 +56,7 @@ class SentimentHuggingFaceAsync:
         self.base_url = base_url
         self.headers = {"x-api-key": self.api_key}
         self.client = httpx.AsyncClient()  # создаём клиент один раз
+        self.timeout = 120 # в секундах сколько ждем ответа от сервера
 
     async def get_sentiment(self, text: str) -> float:
         """Отправляет текст в Hugging Face API (асинхронно) и возвращает +score / -score / 0"""
@@ -64,7 +66,7 @@ class SentimentHuggingFaceAsync:
                 f"{self.base_url}/analyze",
                 json=payload,
                 headers=self.headers,
-                timeout=5.0  # можно уменьшить для скорости
+                timeout=self.timeout  
             )
             result = response.json()
             label = result["result"][0]["label"].lower()
@@ -84,14 +86,4 @@ class SentimentHuggingFaceAsync:
         """Закрываем клиент после всех запросов"""
         await self.client.aclose()
 
-
-# Пример использования
-async def main():
-    clf = SentimentHuggingFaceAsync("https://api.huggingface.co", "YOUR_API_KEY")
-    score = await clf.get_sentiment("I love async programming!")
-    print(score)
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
-      
+     
