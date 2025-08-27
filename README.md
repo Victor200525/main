@@ -1,0 +1,2 @@
+ЗАПУСК pipeline.py
+
