@@ -21,8 +21,8 @@ class PlotDateEcharts:
         # Основная ось Y (левая)
         yaxis_opts = opts.AxisOpts(
             name='Flow',
-            min_=0.6,
-            max_=0.85,
+            #min_=0.6,
+            #max_=0.85,
             position="left"
         )
 

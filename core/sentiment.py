@@ -1,6 +1,8 @@
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 import requests  # для Hugging Face API
+import httpx
+import asyncio
 
 class SentimentHuggingFace:
     def __init__(self, base_url, api_key):
@@ -45,10 +47,6 @@ class SentimentNTLK:
         #norm_score_0_1 = norm_score_log / math.log1p(max(1, upvotes))
         #weight_balanced = 0.5 * norm_score_0_1 + 0.5 * ((compound + 1) / 2)
         return compound
-
-
-import httpx
-import asyncio
 
 class SentimentHuggingFaceAsync:
     def __init__(self, base_url, api_key):

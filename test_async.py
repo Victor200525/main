@@ -35,16 +35,18 @@ class SentimentHuggingFaceAsync:
             return 0
 
 async def send_same_text_multiple_times(text: str, times: int):
-    clf = SentimentHuggingFaceAsync("https://gxdy-work.hf.space", "value1")
+    base_url = "https://smartdataalex-get-sentiment-fastapi.hf.space"
+    base_url2 = "https://gxdy-work.hf.space"
+    clf = SentimentHuggingFaceAsync(base_url, "value1")
     tasks = []
     for _ in range(times):
         # Генерация случайной строки из букв и цифр
         random_str = ''.join(random.choices(string.ascii_letters + string.digits, k=300))
         text1 = text + ' ' + random_str
-        await clf.get_sentiment(text1)
-        #task = asyncio.create_task(clf.get_sentiment(text1))
-        #tasks.append(task)
-    #results = await asyncio.gather(*tasks, return_exceptions=True)
+        #await clf.get_sentiment(text1)
+        task = asyncio.create_task(clf.get_sentiment(text1))
+        tasks.append(task)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
 
     #for i, score in enumerate(results, 1):
     #    print(f"Запрос {i}: | score={score}")
